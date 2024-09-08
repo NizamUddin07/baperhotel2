@@ -6,6 +6,11 @@ document.getElementById('btn-deposite').addEventListener('click', function(){
 
     const depositeTotalElement = document.getElementById('deposite-total');
     const previousDepositeAmountString = depositeTotalElement.innerText;
-    const previousDepositeAmount = parseFloat(depositeTotalElement);
+    const previousDepositeAmount = parseFloat(previousDepositeAmountString);
+
+
+
+    const newDepositeTotal = previousDepositeAmount + depositeAmount;
+    depositeTotalElement.innerText = newDepositeTotal;
 
 })
