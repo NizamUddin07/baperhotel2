@@ -24,4 +24,6 @@ document.getElementById('btn-deposite').addEventListener('click', function(){
 
     depositeField.value="";
 
+
+
 })
