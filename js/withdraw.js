@@ -16,4 +16,12 @@ withdrawField.value = "";
 
 
 
+const balanceElement = document.getElementById('total-balance');
+const balanceElementString =   balanceElement.innerText;
+const previousBalance = parseFloat(balanceElementString);
+
+
+const newBalance = previousBalance - newWithdrawReplace;
+balanceElement.innerText = newBalance; 
+
 })
